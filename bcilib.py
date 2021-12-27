@@ -118,7 +118,8 @@ class bfAPP:
 
     def getpubdate(self):
         now = datetime.now()
-        return now.strftime("%a, %d %b %Y %H:%M:%S")
+        strtime = now.strftime("%a, %d %b %Y %H:%M:%S")+ " +0000"
+        return strtime
 
     def writeXML(self):
 
